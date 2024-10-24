@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桌遊小幫手</title>
+    <link rel="stylesheet" type="text/css" href="./boardgameHelper.css">
+    <script src="./boardgameHelper.js"></script>
+    
+</head>
+<body>
+
+    <nav class="navBar">
+        <ul>
+            <li>
+                <img src="../a3i7e-x17u8-001.ico" alt="桌遊管家logo">
+            </li>
+            <li>
+                <a href="../main.html">首頁</a>
+            </li>
+            <li>
+                <a href="../boardgameList/boardgameList.html">桌遊清單</a>
+            </li>
+            <li>
+                <a href="../boardgameRank/boardgameRank.html">桌遊排行榜</a>
+            </li>
+            <li>
+                <a href="../boardgameDiscussion/boardgameDiscussion.html">桌遊討論區</a>
+            </li>
+            <li>
+                <a href="./boardgameHelper.html">桌遊小幫手</a>
+            </li>
+            <li>
+                <a href="../boardgameSet/boardgameSet.html">美好的假日</a>
+            </li>
+            <li>
+                <a href="../boardgameMember/boardgameMember.html">會員登入</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="mainBody">
+        <div class="container">
+        <h1>桌遊推薦小幫手</h1>
+        <form id="gameForm">
+            <!-- 種類部分 -->
+            <fieldset>
+                <legend>選擇你感興趣的桌遊種類（最多選擇兩個）</legend>
+                <label><input type="checkbox" name="category" value="心機遊戲"> 心機遊戲</label>
+                <label><input type="checkbox" name="category" value="情境遊戲"> 情境遊戲</label>
+                <label><input type="checkbox" name="category" value="合作遊戲"> 合作遊戲</label>
+                <label><input type="checkbox" name="category" value="派對遊戲"> 派對遊戲</label>
+                <label><input type="checkbox" name="category" value="策略遊戲"> 策略遊戲</label>
+                <label><input type="checkbox" name="category" value="反應遊戲"> 反應遊戲</label>
+                <label><input type="checkbox" name="category" value="陣營遊戲"> 陣營遊戲</label>
+                <label><input type="checkbox" name="category" value="小品遊戲"> 小品遊戲</label>
+            </fieldset>
+
+            <!-- 機制部分 -->
+            <fieldset>
+                <legend>選擇你喜歡的桌遊機制（最多選擇兩個）</legend>
+                <label><input type="checkbox" name="mechanic" value="Acting"> Acting 演戲</label>
+                <label><input type="checkbox" name="mechanic" value="Action"> Action /Movement Programming 移動編制</label>
+                <label><input type="checkbox" name="mechanic" value="Action Point Allowance System"> Action Point Allowance System 行動點數配額系統</label>
+                <label><input type="checkbox" name="mechanic" value="Area Control"> Area Control 區域控制</label>
+                <label><input type="checkbox" name="mechanic" value="Area Enclosure"> Area Enclosure 區域圈地</label>
+                <label><input type="checkbox" name="mechanic" value="Area Movement"> Area Movement 區域移動</label>
+                <label><input type="checkbox" name="mechanic" value="Area-Impulse"> Area-Impulse 區域單位啟動</label>
+                <label><input type="checkbox" name="mechanic" value="Auction"> Auction/Bidding 競標</label>
+                <label><input type="checkbox" name="mechanic" value="Betting"> Betting/Wagering 打賭/下賭注</label>
+                <label><input type="checkbox" name="mechanic" value="Campaign"> Campaign/Battle Card Driven 卡片驅動戰棋</label>
+                <label><input type="checkbox" name="mechanic" value="Card Drafting"> Card Drafting 卡片選擇</label>
+                <label><input type="checkbox" name="mechanic" value="Chit-Pull System"> Chit-Pull System 標記選取系統</label>
+                <label><input type="checkbox" name="mechanic" value="Co-operative Play"> Co-operative Play 合作遊戲</label>
+                <label><input type="checkbox" name="mechanic" value="Commodity Speculation"> Commodity Speculation 投機買賣</label>
+                <label><input type="checkbox" name="mechanic" value="Crayon Rail System"> Crayon Rail System 蠟筆鐵路繪製系統</label>
+                <label><input type="checkbox" name="mechanic" value="Dice Rolling"> Dice Rolling 擲骰</label>
+                <label><input type="checkbox" name="mechanic" value="Deck"> Deck / Pool Building 牌組構築</label>
+                <label><input type="checkbox" name="mechanic" value="Grid Movement"> Grid Movement 網格移動</label>
+                <label><input type="checkbox" name="mechanic" value="Hand Management"> Hand Management 手牌管理</label>
+                <label><input type="checkbox" name="mechanic" value="Hex-and-Counter"> Hex-and-Counter 六角形與標記物</label>
+                <label><input type="checkbox" name="mechanic" value="Line Drawing"> Line Drawing 劃線</label>
+                <label><input type="checkbox" name="mechanic" value="Memory"> Memory 記憶</label>
+                <label><input type="checkbox" name="mechanic" value="Modular Board"> Modular Board 組合式版圖</label>
+                <label><input type="checkbox" name="mechanic" value="Paper-and-Pencil"> Paper-and-Pencil 利用紙筆</label>
+                <label><input type="checkbox" name="mechanic" value="Partnerships"> Partnerships 合作關係</label>
+                <label><input type="checkbox" name="mechanic" value="Pattern Building"> Pattern Building 圖樣建立</label>
+                <label><input type="checkbox" name="mechanic" value="Pattern Recognition"> Pattern Recognition 圖樣識別</label>
+                <label><input type="checkbox" name="mechanic" value="Pick-up and Deliver"> Pick-up and Deliver 拿取與運送</label>
+                <label><input type="checkbox" name="mechanic" value="Player Elimination"> Player Elimination 移除玩家</label>
+                <label><input type="checkbox" name="mechanic" value="Point to Point Movement"> Point to Point Movement 點對點移動</label>
+                <label><input type="checkbox" name="mechanic" value="Press Your Luck"> Press Your Luck 按運氣進行評估</label>
+                <label><input type="checkbox" name="mechanic" value="Rock-Paper-Scissors"> Rock-Paper-Scissors 剪刀石頭布</label>
+                <label><input type="checkbox" name="mechanic" value="Role Playing"> Role Playing 角色扮演</label>
+                <label><input type="checkbox" name="mechanic" value="Roll and Move"> Roll and Move 擲骰移動</label>
+                <label><input type="checkbox" name="mechanic" value="Route/Network Building"> Route/Network Building 路線/ 網路建設</label>
+                <label><input type="checkbox" name="mechanic" value="Secret Unit Deployment"> Secret Unit Deployment 秘密單位部署</label>
+                <label><input type="checkbox" name="mechanic" value="Set Collection"> Set Collection 組合收集</label>
+                <label><input type="checkbox" name="mechanic" value="Simulation"> Simulation 模擬</label>
+                <label><input type="checkbox" name="mechanic" value="Simultaneous Action Selection"> Simultaneous Action Selection 同時行動選擇</label>
+                <label><input type="checkbox" name="mechanic" value="Singing"> Singing 歌唱</label>
+                <label><input type="checkbox" name="mechanic" value="Stock Holding"> Stock Holding 持股</label>
+                <label><input type="checkbox" name="mechanic" value="Storytelling"> Storytelling 說故事</label>
+                <label><input type="checkbox" name="mechanic" value="Tile Placement"> Tile Placement 板塊放置</label>
+                <label><input type="checkbox" name="mechanic" value="Time track"> Time track 時間軌</label>
+                <label><input type="checkbox" name="mechanic" value="Trading"> Trading 交易</label>
+                <label><input type="checkbox" name="mechanic" value="Trick-taking"> Trick-taking 在一圈中取勝</label>
+                <label><input type="checkbox" name="mechanic" value="Variable Phase Order"> Variable Phase Order 不同的階段順序</label>
+                <label><input type="checkbox" name="mechanic" value="Variable Player Powers"> Variable Player Powers 不同的角色能力</label>
+                <label><input type="checkbox" name="mechanic" value="Voting"> Voting 投票</label>
+                <label><input type="checkbox" name="mechanic" value="Worker Placement"> Worker Placement 工人放置行動</label>
+                <!-- <span>Acting 演戲
+                    玩家必須戲劇化地表示其他事物或是表演. 
+                    
+                    ● Action /Movement Programming 移動編制
+                    玩家在遊戲過程中秘密的決定移動路線 
+                    
+                    ●Action Point Allowance System 行動點數配額系統
+                    玩家在一個回合得到固定數量的點數, 根據自己的考慮將這些點數用在不同的行動中.
+                    
+                    ●Area Control 區域控制
+                    玩家藉由比其他玩家派遣更多的單位佔據一塊區域, 來賺取勝利點數或是得到特殊能力.
+                    
+                    ●Area Enclosure 區域圈地
+                    將一塊區域圍起來. 
+                    
+                    ●Area Movement (不規則)區域移動
+                    大多用在戰棋, 移動並非在格子間移動, 而是在不規則區域.
+                    
+                    ●Area-Impulse 區域單位啟動
+                    每次啟動時, 玩家驅動地圖的若干區域, 移動這些區域的單位已進行移動與戰鬥.
+                    
+                    ●Auction/Bidding 競標
+                    評估並且競標各種物件. 這種機制是德式桌上遊戲的主流, 有很多玩家說: 德式遊戲等於競標遊戲. 
+                    雖然這種說法並非事實, 不過還是可以看出這種機制是如何被廣泛使用.
+                    
+                    ●Betting/Wagering 打賭/下賭注
+                    玩家以錢做賭注, 根據遊戲本身或遊戲的一部分的結果來賺取更多金錢. 
+                    
+                    ●Campaign/Battle Card Driven 卡片驅動戰棋
+                    這類戰棋遊戲的特徵是, 會利用卡片驅動戰爭以及/或是一般遊戲事件. 
+                    
+                    ●Card Drafting 卡片選擇
+                    玩家從某個數量的公開卡片當中選擇手牌.
+                    
+                    ●Chit-Pull System 標記選取系統
+                    在戰棋當中, 選取可以提供特殊能力的標記. 
+                    
+                    ●Co-operative Play 合作遊戲
+                    所有玩家, 或是除了其中一位玩家以外的所有玩家, 以團隊進行遊戲並且共同承擔輸贏. 
+                    
+                    ●Commodity Speculation 投機買賣
+                    玩家購買商品或是其他投機品, 希望未來價格能夠上揚.
+                    這類遊戲的獲勝條件常常是比較最終的持有金額, 因此在遊戲過程中進行投機買賣很重要.
+                    
+                    ●Crayon Rail System 蠟筆鐵路繪製系統
+                    玩家在城市之間繪製路線 (通常是鐵路).
+                    
+                    ●Dice Rolling 擲骰
+                    顧名思義, 遊戲當中有部份或是全部結果是利用擲骰的結果來決定. 
+                    
+                    ●Deck / Pool Building 牌組構築
+                    遊戲過程中在原始牌庫加入玩家選擇新增的牌卡或物品，在接下來遊戲中改變牌組的使用效能.
+                    
+                    
+                    ●Grid Movement 網格移動
+                    像是棋類等在格線中移動的遊戲.
+                    
+                    ●Hand Management 手牌管理
+                    玩家擁有一堆卡片用以完成一些目標, 而玩家必須節約使用這些卡片.
+                    
+                    ●Hex-and-Counter 六角形與標記物
+                    在許多戰棋當中, 玩家將版圖上的標記, 在地圖上的六角形格子之間移動.
+                    
+                    ●Line Drawing 劃線
+                    玩家在版圖的表面劃線(!?).
+                    
+                    ●Memory 記憶
+                    記憶隱藏的遊戲或者是快速反應記憶的遊戲。 
+                    
+                    ●Modular Board 組合式版圖
+                    遊戲的遊戲區域由可改變的部份組成, 每次遊戲進行會不一樣 (不同的設定), 或是在遊戲過程中會突然變化. 
+                    
+                    ●Paper-and-Pencil 利用紙筆
+                    遊戲進行過程大量使用紙筆. 這種機制不包括橋牌這類只用紙筆來計分的遊戲, 
+                    
+                    ●Partnerships 合作關係
+                    每位玩家與至少一位其他玩家合作, 以團隊型態共同承受輸贏.
+                    
+                    ●Pattern Building 圖樣建立
+                    玩家在一個特定範圍內，以圖樣或形狀顏色，完成某些模式
+                    
+                    ●Pattern Recognition 圖樣識別
+                    透過圖樣或形狀顏色，在移動過程中能夠識別某些狀態。
+                    
+                    ●Pick-up and Deliver 拿取與運送
+                    玩家必須實際將資源在版圖間移動, 以滿足遊戲需求.
+                    
+                    ●Player Elimination 移除玩家
+                    遊戲過程中, 將會移除玩家,直到遊戲結束/勝利.
+                    
+                    ●Point to Point Movement 點對點移動
+                    顧名思義, 在這種機制下, 玩家有機會從版圖的某個地方前往另一個地方. 
+                    
+                    ●Press Your Luck 按運氣進行評估
+                    你重複一個動作（或動作的一部分），直到你決定停止的風險增加（或不）失分.
+                    包括風險管理和風險定價的遊戲，其中的風險是驅動的遊戲機制和評估其他玩家的想法.
+                    
+                    ●Rock-Paper-Scissors 剪刀石頭布
+                    玩家試圖評著正確猜出並反制對手的行動來勝過對手. 
+                    
+                    ●Role Playing 角色扮演
+                    不同於其他桌上遊戲, 角色扮演遊戲會擁有一個故事, 玩家控制這個故事中的角色, 在故事當中行動. 有些遊戲 (像是龍與地下城) 系列, 會有一位主持人 (gamemaster) 負責整個遊戲的流程進行. 這種遊戲主要著重在故事性以及如何模擬角色在故事中的行動
+                    
+                    ●Roll and Move 擲骰移動
+                    這種機制表示遊戲要求玩家擲骰, 接著強制按照擲骰的結果移動. 通常玩家對於這種機制帶有貶意, 認為這種機制下, 多採取隨機行動而非經過策略的行動, 而表示這種遊戲相較之下是很無腦的. 
+                    
+                    ●Route/Network Building 路線/ 網路建設
+                    透過建設路線，達到最長或是特殊條件
+                    
+                    ●Secret Unit Deployment 秘密單位部署
+                    在整場遊戲中, 玩家檯面上的資源並未被得知.
+                    這種機制常被使用在戰爭背景的遊戲當中. 
+                    
+                    ●Set Collection 組合收集
+                    玩家試圖取得特殊組合的物品, 通常超過一種的物品會比較好. 
+                    
+                    ●Simulation 模擬
+                    引用這種機制的遊戲, 主要強調描述出歷史的現實.
+                    
+                    ●Simultaneous Action Selection 同時行動選擇
+                    每位玩家秘密選取行動, 然後所有行動同時解答.
+                    
+                    ●Singing 歌唱
+                    你確定你會想玩這種機制的遊戲嗎?? 
+                    
+                    ●Stock Holding 持股
+                    玩家透過購買股票來持有股權, 通常表示玩家對於一家公司不會擁有獨占的控制權以及利益.
+                    
+                    ●Storytelling 說故事
+                    這種機制下的遊戲不多
+                    
+                    ●Tile Placement 板塊放置
+                    這種遊戲的特色是將不可移動的板塊安排在圖板上.
+                    
+                    ●Time track 時間軌
+                    遊戲透過一條線性的時間軌,推進任務/行動或使玩家行動順序產生變化.算是一種變體的行動點系統.
+                    
+                    ●Trading 交易
+                    玩家與其他玩家交易資源, 以符合他們個別的需要.
+                    
+                    ●Trick-taking 在一圈中取勝
+                    卡片遊戲的一種類型, 玩家依序將牌以牌面向上丟出, 以決定一個勝利者 (不論如何決定), 這個人得到某種獎勵或是處罰.
+                    
+                    ●Variable Phase Order 不同的階段順序
+                    階段的順序在每一回會有所改變; 並非所有階段都會在每個回合出現. 
+                    
+                    ●Variable Player Powers 不同的角色能力
+                    這遊戲有兩位以上玩家, 每位玩家擁有不同的能力. 
+                    
+                    ●Voting 投票
+                    玩家藉由投票共同在遊戲中做出決定.
+                    
+                    
+                    ●Worker Placement 工人放置行動
+                    透過擺放手中擁有的工人行動，控制可以使用的區域/版圖能力</span> -->
+            </fieldset>
+
+            <!-- 遊玩人數 -->
+            <fieldset>
+                <legend>選擇遊玩人數</legend>
+                <label><input type="radio" name="players" value="1人" required> 1人</label>
+                <label><input type="radio" name="players" value="2人"> 2人</label>
+                <label><input type="radio" name="players" value="3人"> 3人</label>
+                <label><input type="radio" name="players" value="4人"> 4人</label>
+                <label><input type="radio" name="players" value="5人"> 5人</label>
+                <label><input type="radio" name="players" value="6人"> 6人</label>
+                <label><input type="radio" name="players" value="7人"> 7人</label>
+                <label><input type="radio" name="players" value="8人以上"> 8人以上</label>
+            </fieldset>
+
+            <!-- 遊戲時間 -->
+            <fieldset>
+                <legend>選擇遊戲時間</legend>
+                <label><input type="radio" name="duration" value="短於30分鐘" required> 短於30分鐘</label>
+                <label><input type="radio" name="duration" value="30-60分鐘"> 30-60分鐘</label>
+                <label><input type="radio" name="duration" value="60-120分鐘"> 60-120分鐘</label>
+                <label><input type="radio" name="duration" value="超過120分鐘"> 超過120分鐘</label>
+            </fieldset>
+
+            <!-- 難度等級 -->
+            <fieldset>
+                <legend>選擇遊戲難度</legend>
+                <label><input type="radio" name="difficulty" value="簡單" required> 簡單</label>
+                <label><input type="radio" name="difficulty" value="中等"> 中等</label>
+                <label><input type="radio" name="difficulty" value="困難"> 困難</label>
+            </fieldset>
+
+            <!-- 提交按鈕 -->
+            <button type="submit">提交</button>
+        </form>
+
+        <div id="resultContainer" class="result-container hidden">
+            <h2>推薦結果</h2>
+            <div id="formResult"></div>
+        </div>
+
+
+        <!-- 自定義模態視窗 -->
+        <!-- <div id="resultModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>推薦結果</h2>
+                <p id="modalResult"></p>
+            </div>
+        </div> -->
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <small>Author: Willy Weng</small>
+        <br>
+        <small>Contact: willyyayaya@gmail.com</small>
+    </footer>
+</body>
+</html>

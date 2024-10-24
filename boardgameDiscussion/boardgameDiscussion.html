@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桌遊討論區</title>
+    <link rel="stylesheet" href="./boardgameDiscussion.css">
+    <script src="./boardgameDiscussion.js" defer></script>
+</head>
+<body>
+
+    <nav class="navBar">
+        <ul>
+            <li>
+                <img src="../a3i7e-x17u8-001.ico" alt="桌遊管家logo">
+            </li>
+            <li>
+                <a href="../main.html">首頁</a>
+            </li>
+            <li>
+                <a href="../boardgameList/boardgameList.html">桌遊清單</a>
+            </li>
+            <li>
+                <a href="../boardgameRank/boardgameRank.html">桌遊排行榜</a>
+            </li>
+            <li>
+                <a href="./boardgameDiscussion.html">桌遊討論區</a>
+            </li>
+            <li>
+                <a href="../boardgameHelper/boardgameHelper.html">桌遊小幫手</a>
+            </li>
+            <li>
+                <a href="../boardgameSet/boardgameSet.html">美好的假日</a>
+            </li>
+            <li>
+                <a href="../boardgameMember/boardgameMember.html">會員登入</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="mainBody">
+        <div class="up">
+            <h1>討論區</h1>
+            <p>您可以在討論區找到同好，如果有對桌遊有疑問的地方，在這邊都找的到解答！</p>
+        </div>
+        <div class="container">
+    
+        <h1>桌遊管家討論區</h1>
+        <section id="forum">
+            <!-- 發表新話題按鈕 -->
+            <button id="newPostBtn" class="new-post-btn">發表新話題</button>
+    
+            <!-- 發表新話題彈出視窗 -->
+            <div id="popupForm" class="popup hidden">
+                <div class="popup-content">
+                    <span id="closePopup" class="close-btn">&times;</span>
+                    <h2>發表新話題</h2>
+                    <form id="newPostForm">
+                        <label for="postTitle">標題：</label>
+                        <input type="text" id="postTitle" name="postTitle" required>
+    
+                        <label for="postContent">內容：</label>
+                        <textarea id="postContent" name="postContent" rows="5" required></textarea>
+    
+                        <button type="submit">發表</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="posts">
+                <h2>討論話題</h2>
+                <div class="post">
+                    <h3>桌遊《卡坦島》策略分享</h3>
+                    <p>作者：會員A</p>
+                    <p>最近玩了《卡坦島》，想分享一些策略心得...</p>
+                    <button class="reply-btn">回覆</button>
+                </div>
+    
+                <div class="post">
+                    <h3>桌遊推薦：適合初學者的桌遊有哪些？</h3>
+                    <p>作者：會員B</p>
+                    <p>有沒有適合新手的桌遊推薦呢？我朋友剛開始接觸桌遊...</p>
+                    <button class="reply-btn">回覆</button>
+                </div>
+
+                <div class="post">
+                    <h3>桌遊推薦：適合家庭者的桌遊有哪些？</h3>
+                    <p>作者：會員B</p>
+                    <p>有沒有適合家庭的桌遊推薦呢？我朋友剛開始接觸桌遊...</p>
+                    <button class="reply-btn">回覆</button>
+                </div>
+            </div>
+    
+            <div id="replyForm" class="hidden">
+                <h2>回覆話題</h2>
+                <form id="replyFormContent">
+                    <textarea id="replyContent" name="replyContent" rows="4" required></textarea>
+                    <button type="submit">發表回覆</button>
+                </form>
+            </div>
+        </section>
+        </div>
+    </div>
+
+    
+
+    <footer class="footer">
+        <small>Author: Willy Weng</small>
+        <br>
+        <small>Contact: willyyayaya@gmail.com</small>
+    </footer>
+</body>
+</html>

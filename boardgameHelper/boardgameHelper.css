@@ -1,0 +1,185 @@
+/* 捲軸寬度及高度 */
+::-webkit-scrollbar {
+    width: 30px; /*右側捲軸寬度*/
+    height: 30px; /*下方捲軸高度*/
+    /* border-radius: 12px; */
+  }
+  /* 軌道背景底色 */
+  ::-webkit-scrollbar-track {
+    background: rgb(203, 192, 192); 
+    /* border-radius: 12px; */
+  }
+   
+  /* 滑桿顏色 */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(222, 172, 155);
+    /* border-radius: 12px; */
+  }
+  /* 滑桿滑鼠滑入時的顏色 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(214, 120, 88); 
+  }
+  /* 捲軸兩側頂端的按鈕 */
+  ::-webkit-scrollbar-button {
+    background-color: rgb(222, 172, 155); 
+    border-radius: 12px;
+  }
+  /* 捲軸兩側頂端的按鈕滑鼠滑入時的顏色 */
+  ::-webkit-scrollbar-button:hover {
+    background-color: rgb(214, 120, 88); 
+    border-radius: 12px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(200, 255, 255);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(60, 60, 240);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgb(30, 30, 130);
+}
+
+nav ul li img {
+    color: white;
+    padding: 7px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 模態視窗樣式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 隱藏結果容器，並使用動畫效果 */
+.result-container {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.result-container.visible {
+    opacity: 1;
+    max-height: 500px; /* 確保容器能夠顯示結果 */
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    /* width: 100%; */
+    background-color: rgb(60, 60, 240);
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    color: white;
+}

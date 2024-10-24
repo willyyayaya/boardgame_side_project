@@ -1,0 +1,148 @@
+/* 捲軸寬度及高度 */
+::-webkit-scrollbar {
+  width: 30px; /*右側捲軸寬度*/
+  height: 30px; /*下方捲軸高度*/
+  /* border-radius: 12px; */
+}
+/* 軌道背景底色 */
+::-webkit-scrollbar-track {
+  background: rgb(203, 192, 192); 
+  /* border-radius: 12px; */
+}
+ 
+/* 滑桿顏色 */
+::-webkit-scrollbar-thumb {
+  background: rgb(222, 172, 155);
+  /* border-radius: 12px; */
+}
+/* 滑桿滑鼠滑入時的顏色 */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(214, 120, 88); 
+}
+/* 捲軸兩側頂端的按鈕 */
+::-webkit-scrollbar-button {
+  background-color: rgb(222, 172, 155); 
+  border-radius: 12px;
+}
+/* 捲軸兩側頂端的按鈕滑鼠滑入時的顏色 */
+::-webkit-scrollbar-button:hover {
+  background-color: rgb(214, 120, 88); 
+  border-radius: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(60, 60, 240);
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: rgb(30, 30, 130);
+}
+
+nav ul li img {
+  color: white;
+  padding: 7px 0px;
+  text-decoration: none;
+  display: block;
+}
+  
+  body{
+    background-color: white;
+  }
+  
+  #username, #password, h3, #fullname, #comfirm_password,#username2, #password2{
+    width: 200px;
+    height: 20px;
+    margin: 10px;
+    color: #df5334;
+  }
+  
+  h5{
+    margin: 20px;
+    color: #a3a2a3;
+  }
+  
+  h5:hover{
+    color: black;
+  }
+  
+  #container1, #container2{
+    /* margin: 50px; */
+    padding: 10px;
+    width: 230px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    border-top: 10px solid #df5334;
+    box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+    
+    /*定位對齊*/
+    position:relative;   
+    margin: auto;
+    top: 100px;
+    /* text-align:center;   */
+  }
+  
+  .system_name{
+    /*定位對齊*/
+    position:relative;   
+    margin: auto;
+    top: 100px;
+    text-align:center; 
+  }
+  
+  .submit{
+    color: white;  
+    background: #df5334;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+  }
+  
+  .submit:hover{
+    background: #db6937;
+  }
+  
+  #container2{
+    visibility: hidden;   /*剛開始消失*/
+    height: 350px;
+  }
+  
+  
+  #copyright{
+    text-align: center;
+    color: #a3a2a3;
+    margin: -200px 0px 0px 0px;
+    font-size: 14px;
+  }
+  
+  input{
+    padding: 5px;
+    border: none; 
+    border:solid 1px #ccc;
+    border-radius: 5px;
+  }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <title>會員登入</title>
+    <link rel="stylesheet" type="text/css" href="./boardgameMember.css">
+    <script src="./boardgameMember.js"></script>
+    <link rel="shortcut icon" href="./a3i7e-x17u8-001.ico">
+
+</head>
+  <body>
+
+    <nav class="navBar">
+      <ul>
+          <li>
+              <img src="../a3i7e-x17u8-001.ico" alt="桌遊管家logo">
+          </li>
+          <li>
+              <a href="../main.html">首頁</a>
+          </li>
+          <li>
+              <a href="../boardgameList/boardgameList.html">桌遊清單</a>
+          </li>
+          <li>
+              <a href="../boardgameRank/boardgameRank.html">桌遊排行榜</a>
+          </li>
+          <li>
+              <a href="../boardgameDiscussion/boardgameDiscussion.html">桌遊討論區</a>
+          </li>
+          <li>
+              <a href="../boardgameHelper/boardgameHelper.html">桌遊小幫手</a>
+          </li>
+          <li>
+              <a href="../boardgameSet/boardgameSet.html">美好的假日</a>
+          </li>
+          <li>
+              <a href="./boardgameMember.html">會員登入</a>
+          </li>
+      </ul>
+  </nav>
+    
+    <div class="login_page">
+      <div id="container1">
+
+        <div class="login">  
+          
+          <h3>登入 Login</h3>
+
+          <form action="用戶管理.php">
+            <input type="text" id="username" name="username" placeholder="帳號" required>
+            <div class="tab"></div>
+            <input type="text" id="password" name="password" placeholder="密碼" required>
+            <div class="tab"></div>
+            <input type="submit" value="登入" class="submit" onclick="location.href=''">
+          </form>  
+
+          <h5 onclick="show_hide()">註冊帳號</h5>
+          
+        </div><!-- login end-->
+      </div><!-- container1 end-->
+    </div><!-- login_page end-->
+    
+    <div class="signup_page">
+      <div id="container2">
+
+        <div class="signup">  
+          
+          <h3>註冊 Sign Up</h3>
+
+          <form action="用戶管理.php">
+            <input type="text" id="fullname" name="fullname" placeholder="使用者全名" required>
+            <div class="tab"></div>
+            <input type="text" id="username2" name="username" placeholder="帳號" required>
+            <div class="tab"></div>
+            <input type="text" id="password2" name="password" placeholder="密碼" required>
+            <div class="tab"></div>
+            <input type="text" id="comfirm_password" name="comfirm_password" placeholder="確認密碼" required>
+            <div class="tab"></div>            
+            <input type="submit" value="註冊" class="submit">
+          </form>  
+
+          <h5 onclick="show_hide()">登入帳號</h5>
+          
+        </div><!-- signup end-->
+      </div><!-- container2 end-->
+    </div><!-- signup_page end--> 
+
+    <div id="copyright">
+      <h4>Copyright © 2024 Willy Weng All rights reserved</h4>
+    </div>    
+  </body>
+</html>

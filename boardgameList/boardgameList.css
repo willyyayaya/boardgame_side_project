@@ -1,0 +1,156 @@
+/* 捲軸寬度及高度 */
+::-webkit-scrollbar {
+    width: 30px; /*右側捲軸寬度*/
+    height: 30px; /*下方捲軸高度*/
+    /* border-radius: 12px; */
+  }
+  /* 軌道背景底色 */
+  ::-webkit-scrollbar-track {
+    background: rgb(203, 192, 192); 
+    /* border-radius: 12px; */
+  }
+   
+  /* 滑桿顏色 */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(222, 172, 155);
+    /* border-radius: 12px; */
+  }
+  /* 滑桿滑鼠滑入時的顏色 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(214, 120, 88); 
+  }
+  /* 捲軸兩側頂端的按鈕 */
+  ::-webkit-scrollbar-button {
+    background-color: rgb(222, 172, 155); 
+    border-radius: 12px;
+  }
+  /* 捲軸兩側頂端的按鈕滑鼠滑入時的顏色 */
+  ::-webkit-scrollbar-button:hover {
+    background-color: rgb(214, 120, 88); 
+    border-radius: 12px;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-color: rgb(200, 255, 255);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(60, 60, 240);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgb(30, 30, 130);
+}
+
+nav ul li img {
+    color: white;
+    padding: 7px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.up {
+    width: 100%;
+    background-color: rgb(200, 200, 255);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.down {
+    width: 100%;
+    background-color: rgb(200, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.category {
+    width: 300px;
+    background-color: rgb(255, 200, 255);
+    text-align: center;
+    margin: 1rem auto 1rem;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    /* width: 100%; */
+    background-color: rgb(60, 60, 240);
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+#dialog1, #dialog2, #dialog3, #dialog4, #dialog5, #dialog6, #dialog7, #dialog8 {
+    color: rgb(0, 0, 0);
+    font-size: large;
+    background-color: rgb(255, 160, 70);
+    width: 300px;
+    max-height: 600px;
+    border-radius: 12px;
+}
+
+#btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8 {
+    background-color: rgb(255, 200, 255);
+    border: none;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover, #btn6:hover, #btn7:hover, #btn8:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 100, 255, 0.8);
+}
+
+#btnClose1, #btnClose2, #btnClose3, #btnClose4, #btnClose5, #btnClose6, #btnClose7, #btnClose8 {
+    background-color: rgb(3, 178, 0); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+
