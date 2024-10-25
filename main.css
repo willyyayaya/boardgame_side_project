@@ -30,13 +30,22 @@
     background-color: rgb(214, 120, 88); 
     border-radius: 12px;
   }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
   
-body {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-size: cover;
     font-family: Arial, sans-serif;
+    background-color: rgb(200, 255, 255);
     margin: 0;
     padding: 0;
     background-size: cover;
-    background-color: rgb(200, 255, 255);
 }
 
 nav ul {
@@ -73,6 +82,7 @@ nav ul li img {
 .mainBody {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     justify-content: space-between;
     width: 100%;
 }
