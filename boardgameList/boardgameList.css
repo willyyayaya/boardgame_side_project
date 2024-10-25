@@ -2,7 +2,8 @@
 ::-webkit-scrollbar {
     width: 30px; /*右側捲軸寬度*/
     height: 30px; /*下方捲軸高度*/
-    /* border-radius: 12px; */
+    border-radius: 12px;
+    background-color: rgb(222, 172, 155);
   }
   /* 軌道背景底色 */
   ::-webkit-scrollbar-track {
@@ -97,7 +98,7 @@ nav ul li img {
 
 .category {
     width: 300px;
-    background-color: rgb(255, 200, 255);
+    background-color: rgb(255, 210, 90);
     text-align: center;
     margin: 1rem auto 1rem;
     box-sizing: border-box;
@@ -134,12 +135,12 @@ nav ul li img {
 }
 
 #btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8 {
-    background-color: rgb(255, 200, 255);
+    background-color: rgb(255, 210, 90);
     border: none;
 }
 
 #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover, #btn6:hover, #btn7:hover, #btn8:hover {
-    box-shadow: 0 8px 16px 0 rgba(255, 100, 255, 0.8);
+    box-shadow: 0 8px 16px 0 rgba(255, 193, 21, 0.8);
 }
 
 #btnClose1, #btnClose2, #btnClose3, #btnClose4, #btnClose5, #btnClose6, #btnClose7, #btnClose8 {

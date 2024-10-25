@@ -2,7 +2,8 @@
 ::-webkit-scrollbar {
     width: 30px; /*右側捲軸寬度*/
     height: 30px; /*下方捲軸高度*/
-    /* border-radius: 12px; */
+    border-radius: 12px;
+    background-color: rgb(222, 172, 155);
   }
   /* 軌道背景底色 */
   ::-webkit-scrollbar-track {

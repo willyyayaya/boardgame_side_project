@@ -2,7 +2,8 @@
 ::-webkit-scrollbar {
   width: 30px; /*右側捲軸寬度*/
   height: 30px; /*下方捲軸高度*/
-  /* border-radius: 12px; */
+  border-radius: 12px;
+  background-color: rgb(222, 172, 155);
 }
 /* 軌道背景底色 */
 ::-webkit-scrollbar-track {
@@ -96,7 +97,7 @@ nav ul li img {
 .category {
     width: 300px;
     height: 450px;
-    background-color: rgb(255, 200, 255);
+    background-color: rgb(255, 210, 90);
     text-align: center;
     margin: 1rem auto 1rem;
     box-sizing: border-box;
@@ -142,7 +143,7 @@ nav ul li img {
   }
   
   .flip-card-front {
-    background-color: rgb(255, 200, 255);
+    background-color: rgb(255, 210, 90);
     
   }
 
@@ -150,7 +151,7 @@ nav ul li img {
     padding: 5px;
   }
   .flip-card-back {
-    background-color: rgb(255, 200, 255);
+    background-color: rgb(255, 210, 90);
     
     transform: rotateY(180deg);
   }
