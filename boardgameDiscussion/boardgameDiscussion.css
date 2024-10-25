@@ -87,7 +87,7 @@
 /* 彈窗內部內容 */
 .popup-content {
     overflow-y: auto;
-    max-height: 300px;
+    /* max-height: 300px; */
 }
 
 /* 關閉按鈕 */
@@ -107,6 +107,14 @@
 
 #forum {
     margin: 20px;
+}
+
+#postTitle {
+    border-radius: 12px;
+}
+
+#postContent {
+    border-radius: 12px;
 }
 
 nav ul {

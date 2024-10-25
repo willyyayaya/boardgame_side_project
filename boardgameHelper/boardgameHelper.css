@@ -87,6 +87,14 @@ nav ul li img {
     width: 100%;
 }
 
+.up {
+    width: 100%;
+    background-color: rgb(200, 200, 255);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .container {
     max-width: 600px;
     margin: 0 auto;

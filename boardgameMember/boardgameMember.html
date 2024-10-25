@@ -44,22 +44,24 @@
     <div class="login_page">
         <div id="container1"> <!-- 登入表單容器 -->
             <div class="login">
-                <h3>登入 Login</h3>
-                <form action="login.php" method="POST">
+                <h2>登入 Login</h2>
+                <br>
+                <form action="./boardgameMember.php" method="POST">
                     <input type="text" id="username" name="username" placeholder="帳號" required>
                     <div class="tab"></div>
                     <input type="password" id="password" name="password" placeholder="密碼" required>
                     <div class="tab"></div>
                     <input type="submit" value="登入" class="submit">
                 </form>
-                <h5 onclick="show_hide()">註冊帳號</h5>
+                <h3 onclick="show_hide()">註冊帳號</h3>
             </div>
         </div>
 
         <div id="container2" style="display:none;"> <!-- 註冊表單容器，初始隱藏 -->
             <div class="signup">
-                <h3>註冊 Sign Up</h3>
-                <form action="register.php" method="POST">
+                <h2>註冊 Sign Up</h2>
+                <br>
+                <form action="./boardgameMember.php" method="POST">
                     <input type="text" id="fullname" name="fullname" placeholder="使用者全名" required>
                     <div class="tab"></div>
                     <input type="email" id="email" name="email" placeholder="電子信箱" required>
@@ -72,7 +74,7 @@
                     <div class="tab"></div>
                     <input type="submit" value="註冊" class="submit">
                 </form>
-                <h5 onclick="show_hide()">登入帳號</h5>
+                <h3 onclick="show_hide()">登入帳號</h3>
             </div>
         </div>
     </div>
