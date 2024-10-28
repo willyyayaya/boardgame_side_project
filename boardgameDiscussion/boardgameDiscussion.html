@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+    <!-- 可以載入 bootstrap 來讓 <button id="newPostBtn" type="button" class="btn btn-primary new-post-btn">發表新話題</button> 產生效果 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>桌遊討論區</title>
     <link rel="stylesheet" href="./boardgameDiscussion.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+
     <script src="./boardgameDiscussion.js" defer></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
 </head>
 <body>
 
@@ -41,14 +47,14 @@
     <div class="mainBody">
         <div class="up">
             <h1>討論區</h1>
-            <p>您可以在討論區找到同好，如果有對桌遊有疑問的地方，在這邊都找的到解答！</p>
+            <p class="h6">您可以在討論區找到同好，如果有對桌遊有疑問的地方，在這邊都找的到解答！</p>
         </div>
         <br>
         <div class="container">
         <h1>桌遊管家討論區</h1>
         <section id="forum">
             <!-- 發表新話題按鈕 -->
-            <button id="newPostBtn" class="new-post-btn">發表新話題</button>
+            <button id="newPostBtn" type="button" class="btn btn-primary new-post-btn">發表新話題</button>
     
             <!-- 發表新話題彈出視窗 -->
             <div id="popupForm" class="popup hidden">
@@ -100,8 +106,6 @@
         </section>
         </div>
     </div>
-
-    
 
     <footer class="footer">
         <small>Author: Willy Weng</small>

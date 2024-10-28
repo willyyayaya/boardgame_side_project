@@ -108,7 +108,7 @@ nav ul li img {
 
 .category {
     width: 300px;
-    height: 450px;
+    height: 400px;
     background-color: rgb(255, 210, 90);
     text-align: center;
     margin: 1rem auto 1rem;
@@ -123,6 +123,10 @@ nav ul li img {
     width: 100%;
     margin-top: 20px;
     padding: 20px 0px 20px 0px;
+}
+
+h6 {
+  font-size: 20px;
 }
 
 .flip-card {

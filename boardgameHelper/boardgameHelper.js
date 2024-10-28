@@ -61,3 +61,4 @@ document.addEventListener('DOMContentLoaded', () => {
         resultContainer.classList.add('visible');
     });
 });
+
