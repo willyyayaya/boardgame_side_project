@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>桌遊小幫手</title>
     <link rel="stylesheet" type="text/css" href="./boardgameHelper.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./boardgameHelper.js"></script>
+    <link rel="shortcut icon" href="./a3i7e-x17u8-001.ico">
     
 </head>
 <body>
-<!-- to do: 新增時間線功能來詳細解釋每個選項 -->
+<!-- to do: 新增時間線功能來詳細解釋每個選項，回到頂端按鈕記得修正 -->
     <nav class="navBar">
         <ul>
             <li>
@@ -315,7 +317,7 @@
             <!-- 難度等級 -->
             <fieldset>
                 <legend>選擇遊戲難度</legend>
-                <label><input type="radio" name="difficulty" value="esay" required> 簡單</label>
+                <label><input type="radio" name="difficulty" value="easy" required> 簡單</label>
                 <label><input type="radio" name="difficulty" value="medium"> 中等</label>
                 <label><input type="radio" name="difficulty" value="hard"> 困難</label>
             </fieldset>
@@ -324,23 +326,15 @@
             <button type="submit">提交</button>
         </form>
 
+        
         <div id="resultContainer" class="result-container hidden">
             <h2>推薦結果</h2>
             <div id="formResult"></div>
         </div>
-
-
-        <!-- 自定義模態視窗 -->
-        <!-- <div id="resultModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>推薦結果</h2>
-                <p id="modalResult"></p>
-            </div>
-        </div> -->
         </div>
     </div>
-    
+    <!-- HTML: 回到頂端按鈕 -->
+    <button class="goTop jq-goTop" style="display: none;">回到頂端</button>
 
     <footer class="footer">
         <small>Author: Willy Weng</small>

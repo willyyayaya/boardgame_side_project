@@ -63,3 +63,21 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+$(document).ready(function () {
+    $(window).scroll(function () {
+        const scrollPosition = $(window).scrollTop();
+        const windowHeight = $(window).height();
+        const documentHeight = $(document).height();
+
+        if (scrollPosition > (documentHeight - windowHeight) / 2) {
+            $(".goTop").fadeIn();
+        } else {
+            $(".goTop").fadeOut();
+        }
+    });
+
+    $(".jq-goTop").click(function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, 600);
+    });
+});

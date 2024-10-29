@@ -3,31 +3,31 @@
     width: 30px; /*右側捲軸寬度*/
     height: 30px; /*下方捲軸高度*/
     border-radius: 12px;
-    background-color: rgb(222, 172, 155);
+    background-color: rgb(255, 216, 169);
   }
   /* 軌道背景底色 */
   ::-webkit-scrollbar-track {
-    background: rgb(203, 192, 192); 
+    background: rgb(253, 238, 220); 
     /* border-radius: 12px; */
   }
    
   /* 滑桿顏色 */
   ::-webkit-scrollbar-thumb {
-    background: rgb(222, 172, 155);
+    background: rgb(255, 216, 169);
     /* border-radius: 12px; */
   }
   /* 滑桿滑鼠滑入時的顏色 */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(214, 120, 88); 
+    background: rgb(241, 166, 97); 
   }
   /* 捲軸兩側頂端的按鈕 */
   ::-webkit-scrollbar-button {
-    background-color: rgb(222, 172, 155); 
+    background-color: rgb(255, 216, 169); 
     border-radius: 12px;
   }
   /* 捲軸兩側頂端的按鈕滑鼠滑入時的顏色 */
   ::-webkit-scrollbar-button:hover {
-    background-color: rgb(214, 120, 88); 
+    background-color: rgb(241, 166, 97); 
     border-radius: 12px;
   }
 
@@ -41,8 +41,9 @@
     flex-direction: column;
     padding: 0;
     background-size: cover;
-    font-family: Arial, sans-serif;
-    background-color: rgb(200, 255, 255);
+    font-family: monospace;
+    font-size: 20px;
+    background-color: rgb(255, 208, 155);
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -52,7 +53,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: rgb(60, 60, 240);
+    background-color: rgb(227, 139, 41);
     display: flex;
     justify-content: space-around;
 }
@@ -69,7 +70,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(30, 30, 130);
+    background-color: rgb(226, 124, 7);
 }
 
 nav ul li img {
@@ -89,7 +90,7 @@ nav ul li img {
 
 .up {
     width: 100%;
-    background-color: rgb(200, 200, 255);
+    background-color: rgb(253, 255, 188);
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
@@ -97,7 +98,7 @@ nav ul li img {
 
 .down {
     width: 100%;
-    background-color: rgb(200, 255, 255);
+    background-color: rgb(241, 166, 97);
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -113,6 +114,7 @@ nav ul li img {
     margin: 1rem auto 1rem;
     box-sizing: border-box;
     padding: 10px;
+    padding-top: 30px;
 }
 
 .content {
@@ -132,11 +134,11 @@ h6 {
     bottom: 0;
     left: 0;
     /* width: 100%; */
-    background-color: rgb(60, 60, 240);
+    background-color: rgb(227, 139, 41);
     padding: 5px;
     text-align: center;
     margin: 0;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #dialog1, #dialog2, #dialog3, #dialog4, #dialog5, #dialog6, #dialog7, #dialog8 {
@@ -158,9 +160,9 @@ h6 {
 }
 
 #btnClose1, #btnClose2, #btnClose3, #btnClose4, #btnClose5, #btnClose6, #btnClose7, #btnClose8 {
-    background-color: rgb(3, 178, 0); 
+    background-color: rgb(253, 255, 188); 
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
