@@ -114,10 +114,43 @@ nav ul li img {
     padding: 20px 0px 20px 0px;
 }
 
+.left {
+  background-image: 
+  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), 
+  url(../台北.jpg); /* 替換為台中.jpg 和 高雄.jpg 在其他 class */
+
+  /* 讓背景圖片填滿元素並居中 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.middle {
+  background-image: 
+  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), 
+  url(../台中.jpg); /* 替換為台中.jpg 和 高雄.jpg 在其他 class */
+
+  /* 讓背景圖片填滿元素並居中 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right {
+  background-image: 
+  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), 
+  url(../高雄.jpg); /* 替換為台中.jpg 和 高雄.jpg 在其他 class */
+
+  /* 讓背景圖片填滿元素並居中 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .left, .middle, .right {
     flex: 1;
     margin: 0 10px;
-    background-color: rgb(253, 238, 220);
+    /* background-color: rgb(253, 238, 220); */
     padding: 20px 10px 20px 10px;
     box-sizing: border-box;
     color: black;
@@ -132,6 +165,7 @@ nav ul li img {
 
 #contentHeader1, #contentHeader2, #contentHeader3 {
     font-size: 50px;
+    color: rgb(253, 72, 0);
     position: relative; /* Fixed position - sit on top of the page */
     transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
