@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桌遊介紹</title>
+    <link rel="stylesheet" href="./boardgameDatabase.css">
+    <script src="./boardgameDatabase.js"></script>
+    <link rel="shortcut icon" href="../a3i7e-x17u8-001.ico">
+    
+</head>
+<body>
+
+    <nav class="navBar">
+      <ul>
+          <li>
+              <img src="../a3i7e-x17u8-001.ico" alt="桌遊管家logo">
+          </li>
+          <li>
+              <a href="../main.html">首頁</a>
+          </li>
+          <li>
+              <a href="../boardgameList/boardgameList.html">桌遊清單</a>
+          </li>
+          <li>
+              <a href="../boardgameRank/boardgameRank.html">桌遊排行榜</a>
+          </li>
+          <li>
+              <a href="../boardgameDiscussion/boardgameDiscussion.html">桌遊討論區</a>
+          </li>
+          <li>
+              <a href="../boardgameHelper/boardgameHelper.html">桌遊小幫手</a>
+          </li>
+          <li>
+              <a href="../boardgameSet/boardgameSet.html">美好的假日</a>
+          </li>
+          <li>
+              <a href="../boardgameMember/boardgameMember.html">會員登入</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="mainBody">
+        <div class="up">
+            <h1>桌遊介紹</h1>
+            <p>透過簡單的介紹來讓您快速了解桌遊的規則！</p>
+        </div>
+        <br>
+        <div class="game-template">
+            <img id="bg_pic" class="game-image" src="${bg_pic}" alt="${bg_name}">
+            <div class="game-info">
+                <h1 id="bg_name"></h1>
+                <p><strong>遊玩人數：</strong><span id="bg_players"></span></p>
+                <p><strong>遊戲機制：</strong><span id="bg_mechanic"></span></p>
+                <p><strong>遊戲種類：</strong><span id="bg_category"></span></p>
+                <p><strong>遊戲時間：</strong><span id="bg_duration"></span></p>
+                <p><strong>遊戲難度：</strong><span id="bg_difficulty"></span></p>
+                <p><strong>遊戲介紹：</strong><span id="bg_detail"></span></p>
+                <p><strong>投票數：</strong><span id="bg_vote"></span></p>
+                <p><strong>遊戲教學：</strong><iframe  id="bg_teach" width="560" height="315" src="${bg_teach}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <small>Author: Willy Weng</small>
+        <br>
+        <small>Contact: willyyayaya@gmail.com</small>
+    </footer>   
+</body>
+</html>

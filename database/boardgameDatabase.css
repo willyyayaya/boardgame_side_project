@@ -50,11 +50,11 @@
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-}
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
 
 nav ul {
     list-style-type: none;
@@ -93,6 +93,8 @@ nav ul li img {
     flex-grow: 1;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
+    /* background-color: rgb(253, 255, 188); */
 }
 
 .up {
@@ -104,71 +106,42 @@ nav ul li img {
     box-sizing: border-box;
 }
 
-.content {
+.game-template {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(241, 166, 97);
-    width: 100%;
-    margin-top: 20px;
-    padding: 20px 0px 20px 0px;
+    gap: 20px;
+    align-items: center;
 }
 
-.pictures-wrap {
-  width: 100%;
-  overflow: hidden;
+.game-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.pictures-wrap ul {
-  display: flex;
-  width: 100%; /* 因為每次展示4張，總共有8張圖，因此設置為200% */
-  animation: move 10s infinite; /* 10秒完成一次動畫循環，無限循環 */
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.pictures-wrap ul li {
-  width: 25%; /* 每張圖片占容器的25%寬度，這樣一次顯示4張 */
-  flex-shrink: 0; /* 防止圖片被壓縮 */
-}
-
-.pictures-wrap ul li img {
-  width: 100%;
-  height: 300px; /* 固定高度 */
-  object-fit: contain; /* 圖片按比例縮放並顯示完整 */
-  transition: transform 0.3s ease; /* 鼠標懸停時圖片的縮放動畫 */
-}
-
-.pictures-wrap ul li img:hover {
-  transform: scale(1.05); /* 懸停時圖片放大5% */
-}
-
-@keyframes move {
-  0%, 25% {
-      transform: translateX(0); /* 第一組圖片 */
-  }
-  50%, 75% {
-      transform: translateX(-100%); /* 第二組圖片 */
-  }
-}
-
-
-.left, .middle, .right {
+.game-info {
     flex: 1;
-    margin: 0 10px;
-    background-color: rgb(253, 238, 220);
-    padding: 20px 10px 20px 10px;
-    box-sizing: border-box;
-    color: black;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
 }
 
-.left:hover, .middle:hover, .right:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-  }
+.game-info h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.game-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.game-info strong {
+    color: #222;
+}
 
 .footer {
     bottom: 0;
