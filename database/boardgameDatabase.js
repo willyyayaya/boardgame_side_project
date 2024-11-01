@@ -25,4 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("bg_pic").alt = gameData.bg_name;
     document.getElementById("bg_vote").textContent = gameData.bg_vote;
     document.getElementById("bg_teach").src = gameData.bg_teach;
+
+    // 設置投票按鈕的點擊事件
+    document.getElementById("voteButton").addEventListener("click", function() {
+        gameData.bg_vote += 1; // 增加投票數
+        document.getElementById("bg_vote").textContent = gameData.bg_vote; // 更新顯示
+    });
 });

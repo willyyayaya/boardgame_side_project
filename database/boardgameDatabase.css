@@ -143,6 +143,22 @@ nav ul li img {
     color: #222;
 }
 
+button {
+  display: block;
+  /* width: 100%; */
+  padding: 10px;
+  background-color: rgb(255, 220, 184);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(255, 193, 182);
+}
+
 .footer {
     bottom: 0;
     left: 0;
