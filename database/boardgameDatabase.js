@@ -11,7 +11,21 @@ document.addEventListener("DOMContentLoaded", function() {
         bg_pic: "https://cdn.prod.website-files.com/575714cc825e8dbc6c83b98a/5ab8f0fedc7441512652764e_Aquarius_Box_3D-p-800.jpeg",
         bg_vote: 0,
         bg_teach: "https://www.youtube.com/embed/BOiNurgWZo0?si=QXKGfRNOt5MrxZD9"
-    };
+     };
+
+    // 從 fetch_game.php 獲取遊戲資料
+    // fetch('fetch_game.php')
+    // .then(response => {
+    //     if (!response.ok) {
+    //         throw new Error('Network response was not ok: ' + response.statusText);
+    //     }
+    //     return response.json(); // 將回應轉換為 JSON 格式
+    // })
+    // .then(data => {
+    //     if (data.error) {
+    //         console.error(data.error);
+    //         return;
+    //     }
 
     // 動態填充數據
     document.getElementById("bg_name").textContent = gameData.bg_name;
@@ -30,5 +44,23 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("voteButton").addEventListener("click", function() {
         gameData.bg_vote += 1; // 增加投票數
         document.getElementById("bg_vote").textContent = gameData.bg_vote; // 更新顯示
+    });
+
+    // 設置投票按鈕的點擊事件
+    document.getElementById("voteButton").addEventListener("click", function() {
+        fetch('updateVote.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ bg_name: document.getElementById("bg_name").textContent }) // 傳遞 bg_name 作為參數
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.bg_vote !== undefined) {
+                document.getElementById("bg_vote").textContent = data.bg_vote; // 更新顯示的投票數
+            } else {
+                console.error("投票更新失敗", data.error);
+            }
+        })
+        .catch(error => console.error('投票錯誤:', error));
     });
 });
