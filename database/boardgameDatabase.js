@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
         bg_teach: "https://www.youtube.com/embed/BOiNurgWZo0?si=QXKGfRNOt5MrxZD9"
      };
 
-    // 從 fetch_game.php 獲取遊戲資料
-    // fetch('fetch_game.php')
+    // 從 boardgameDatabase.php 獲取遊戲資料
+    // fetch('boardgameDatabase.php')
     // .then(response => {
     //     if (!response.ok) {
     //         throw new Error('Network response was not ok: ' + response.statusText);
